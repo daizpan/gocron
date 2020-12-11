@@ -1,0 +1,9 @@
+job:
+  - name: echo
+    command: echo sample
+    schedule: "* * * * *"
+  - name: ls
+    command: ls -al
+    schedule: "@every 10s"
+    cwd: "../"
+    # slack: https://hooks.slack.com/services/
